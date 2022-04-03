@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { useWindowDimensions } from "react-native";
+import React, { useContext, useState, useEffect } from "react";
+import { useWindowDimensions, Alert } from "react-native";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { NewsContext } from "../API/Context";
 import DiscoverScreen from "../Screens/DiscoverScreen";
@@ -8,6 +8,14 @@ import TopNavigation from "./TopNavigation";
 
 export default function InshortTabs() {
   const layout = useWindowDimensions();
+
+  const { authData, setAuthData } = useContext(NewsContext);
+
+  useEffect(() => {
+    Alert.alert("Welcome", "Hello, " + authData.email + " Have a nice day", [
+      { text: "OK", onPress: () => console.log("OK Pressed") },
+    ]);
+  }, []);
 
   const { index, setIndex } = useContext(NewsContext);
 

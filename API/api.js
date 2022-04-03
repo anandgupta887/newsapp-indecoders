@@ -34,33 +34,6 @@ export const categories = [
   },
 ];
 
-export const country = [
-  {
-    code: "in",
-    name: "India",
-  },
-  {
-    code: "us",
-    name: "USA",
-  },
-  {
-    code: "au",
-    name: "Australia",
-  },
-  {
-    code: "ru",
-    name: "Russia",
-  },
-  {
-    code: "fr",
-    name: "France",
-  },
-  {
-    code: "gb",
-    name: "United Kingdom",
-  },
-];
-
 export const sources = [
   {
     id: "bbc-news",

@@ -44,6 +44,7 @@ const Login = () => {
           .then((userCredential) => {
             const user = userCredential.user;
             setAuthData(user);
+            console.log(user);
             setLoader(false);
           });
       } catch (error) {

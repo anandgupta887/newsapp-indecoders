@@ -1,5 +1,8 @@
 {
-  "expoServerPort": null,
+  "expoServerPort": 19000,
   "devToolsPort": 19002,
-  "packagerPort": 19000
+  "packagerPort": 19000,
+  "expoServerNgrokUrl": "https://5b-sx2.anandgupta887.newsapp-indecoders.exp.direct",
+  "packagerNgrokUrl": "https://5b-sx2.anandgupta887.newsapp-indecoders.exp.direct",
+  "ngrokPid": 10896
 }
